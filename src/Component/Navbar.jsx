@@ -8,6 +8,8 @@ import Project from './Project';
 import { Skill } from './Skill';
 import { Contact } from './Contact';
 
+import { HiDownload } from "react-icons/hi";
+
 
 export default function Navbar() {
 
@@ -91,7 +93,15 @@ export default function Navbar() {
               >
                 CONTACT
               </Link>
-              <button  className="nav-link resume">Resume</button>
+              </li>
+
+              <li>
+              
+              <button className="nav-link resume resume-btn">
+                Resume <HiDownload/>
+              </button>
+             
+              
             </li>
           </ul>
         </nav>
@@ -102,12 +112,13 @@ export default function Navbar() {
       <section id="about" className='aboutbg'>
         <About/>
       </section>
-      <section id="projects">
-        <Project/>
-      </section>
+     
       <section id="skills">
 
         <Skill/>
+      </section>
+      <section id="projects">
+        <Project/>
       </section>
      
       <section id="contact">
