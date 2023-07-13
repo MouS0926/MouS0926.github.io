@@ -96,10 +96,10 @@ export default function Navbar() {
           </ul>
         </nav>
       </header>
-      <section id="home">
+      <section id="home" className='homebg'>
         <Home/>
       </section>
-      <section id="about">
+      <section id="about" className='aboutbg'>
         <About/>
       </section>
       <section id="projects">
