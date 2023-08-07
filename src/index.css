@@ -36,11 +36,11 @@ section {
   margin-top: -80px;
 }
 
-#projects,
+/* #projects,
 #contact {
   color: #3b3b3c;
   background: #eaf2fa;
-}
+} */
 
 
 
@@ -91,11 +91,11 @@ li:hover {
   margin-top: -80px;
 }
 
-#projects,
+/* #projects,
 #contact {
   color: #3b3b3c;
   background: #eaf2fa;
-}
+} */
 
 
 
@@ -212,6 +212,9 @@ width: 60%;
   }
   .imgPart{
 width: 40%;
+  }
+  .imgPart img{
+    width:64%;
   }
 .content {
 	position: relative;
@@ -407,11 +410,17 @@ width: 40%;
 
 /* about */
 
-.aboutbg{
+.aboutbg,.skillbg,.projbg,.gitbg{
   background-color: #1c1e3e;
   
 }
+.projbg{
+  height: 150vh;
+}
 
+.gitbg{
+  
+}
 .aboutCap{
   display: flex;
   flex-direction: row-reverse;
@@ -514,4 +523,58 @@ gap: 10px;
 
 .shape-svg svg {
   fill: #1c1e3e;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) { 
+  section{
+    height: 100vh;
+  }
+  .line1 {
+  
+    left: 24%;
+ top: 18%;
+font-size: 16px;
+}
+.textPart {
+  width: 100%;
+}
+.imgPart {
+  width: 100%;
+}
+.content h2 {
+ 
+  font-size: 25px;
+  margin-top: -22px;
+  padding: 0px 91px;
+}
+  .home{
+    display: flex;
+    width: 100%;
+  flex-direction: column;
+    }
+    .line2 {
+     
+      margin-top: 250px;
+      left: 15%;
+     
+      font-size: 20px;
+  }
+
+  .abtContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px 2px;
+}
+
+.ab-img {
+  width: 100%;
+}
+
+
+.ab-content {
+  width: 100%;
+}
+
+
 }

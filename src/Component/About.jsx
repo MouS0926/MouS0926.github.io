@@ -1,11 +1,26 @@
 import React from 'react'
 import img from "../image/ab2.gif"
+import styled from "styled-components"
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { BiLogoGmail } from "react-icons/bi";
 import { Link } from "react-scroll";
+import { HiDownload } from 'react-icons/hi';
 export const About = () => {
+
+
+  const resumeUrl = '../resume/Moumita-Sarkar-Resume.pdf';
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.target = '_blank'; // Open in a new tab
+    link.download = 'resume.pdf'; // Set the download attribute
+    link.click();
+  };
+
+
+
   return (
-    <div className='abtContainer'>
+    <DIV className='abtContainer about section'>
       <div className='ab-img'>
         <img src={img} alt="about-img" />
       </div>
@@ -31,11 +46,33 @@ export const About = () => {
   
       <a href="https://github.com/MouS0926" target='__blank' id="contact-github"><div><BsGithub/></div></a>
       <a href="mailto:sarkarmoumita314@gmail.com" id="contact-email"><div><BiLogoGmail/></div></a>
-   
- 
+      
+
+        <a href="https://drive.google.com/file/d/1bEonWvKeXAwk48PT79geIm2AVjFeYrEF/view?usp=sharing" target="_blank"  id="resume-button-2"  download>
+          <div>
+            Resume
+             </div>
+
+           
+        </a>
+
+
+        <button onClick={handleDownload}>
+      Download Resume
+    </button>
+      
 </div>
 
       </div>
-    </div>
+    </DIV>
   )
 }
+const DIV=styled.div`
+@media screen and (min-device-width: 320px) and (max-device-width: 480px)
+{
+  .abtContact a div {
+    padding: 17px 17px;
+    font-size: 20px;
+}
+}
+`

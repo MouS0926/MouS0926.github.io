@@ -7,9 +7,12 @@ import { About } from './About';
 import Project from './Project';
 import { Skill } from './Skill';
 import { Contact } from './Contact';
-
+import resume from '../resume/Moumita-Sarkar-Resume.pdf'
 import { HiDownload } from "react-icons/hi";
 
+import GitHubCalendar from 'react-github-calendar';
+import Github from './Github';
+import Footer from './Footer';
 
 export default function Navbar() {
 
@@ -35,6 +38,7 @@ export default function Navbar() {
     };
   }, []);
 
+ 
   return (
     <div>
  <header className={isMenuOpen ? 'nav nav-open' : 'nav'}>
@@ -58,7 +62,7 @@ export default function Navbar() {
 
             <li>
               <Link activeClass="active" smooth={true} spy={true} to="about"  onClick={toggleMenu}
-              className="nav-link about"
+              className="nav-link  about section"
               >
                 ABOUT
               </Link>
@@ -96,10 +100,21 @@ export default function Navbar() {
               </li>
 
               <li>
+             
+              </li>
+
+              <li>
               
-              <button className="nav-link resume resume-btn">
+             
+        <a href={resume}   download>
+            <button className="nav-link resume resume-btn" target="_blank" id="resume-button-1">
                 Resume <HiDownload/>
-              </button>
+                </button>
+                
+            </a>
+
+              
+              
              
               
             </li>
@@ -109,21 +124,32 @@ export default function Navbar() {
       <section id="home" className='homebg'>
         <Home/>
       </section>
-      <section id="about" className='aboutbg'>
+      <section id="about" className='aboutbg about section'>
         <About/>
       </section>
      
-      <section id="skills">
+      <section id="skills" className='skillbg'>
 
         <Skill/>
       </section>
-      <section id="projects">
+      <section id="projects" className='projbg'>
         <Project/>
       </section>
      
-      <section id="contact">
+
+      <section id="git" className='gitbg'>
+        <Github/>
+         </section>
+
+
+      <section id="contact" className='projbg' width="50vh">
         <Contact/>
          </section>
+
+       
+       <Footer/>
+         
+      
 
     </div>
   )

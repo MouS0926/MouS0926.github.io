@@ -1,12 +1,12 @@
 import React from 'react'
-
+import profileImg from "../image/profile-img.png"
 export const Home = () => {
   return (
     <div class="nav-link home">
 
 
 {/* animation */}
-<div class="area" >
+{/* <div class="area" >
             <ul class="circles">
                     <li></li>
                     <li></li>
@@ -19,7 +19,7 @@ export const Home = () => {
                     <li></li>
                    <li></li>
             </ul>
-    </div >
+    </div > */}
 
 {/* animation */}
 
@@ -44,7 +44,7 @@ export const Home = () => {
 
 </div>
 <div className='imgPart'>
-<img src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-businessman-user-avatar-wearing-suit-with-red-tie-png-image_5809521.png" class="home-img" alt=""  />
+      <img src={profileImg} class="home-img" alt=""  />
 
 
 </div>
