@@ -25,51 +25,51 @@ export const Skill = () => {
       <div className="skildiv">
           <div className='skills-card'>
             <img className='skills-card-img' src={html} alt=""  />
-            <p className="skills-card-name"></p>
+            <p className="skills-card-name">HTML5</p>
           </div>
           <div className='skills-card'>
             <img className='skills-card-img' src={css} alt=""  />
-            <p className="skills-card-name"></p>
+            <p className="skills-card-name">CSS3</p>
           </div>
           <div className='skills-card'>
            <img className='skills-card-img' src={js} alt=""  />
-           <p className="skills-card-name"></p>
+           <p className="skills-card-name">JavaScript</p>
         </div>
         <div className='skills-card'>
           <img src={react} alt="" className='skills-card-img' />
-          <p className="skills-card-name"></p>
+          <p className="skills-card-name">React</p>
         </div>
         <div className='skills-card'>
           <img className='skills-card-img' src={redux} alt=""  />
-          <p className="skills-card-name"></p>
+          <p className="skills-card-name">Redux</p>
         </div>
         <div className='skills-card'>
           <img src={typs} alt="" className='skills-card-img' />
-          <p className="skills-card-name"></p>
+          <p className="skills-card-name">TypeScript</p>
         </div>
         <div className='skills-card'>
           <img src={bootstrap} alt="" className='skills-card-img' />
-          <p className="skills-card-name"></p>
+          <p className="skills-card-name">Bootstrap</p>
         </div>
         <div className='skills-card'>
           <img src={chakra} alt="" className='skills-card-img' />
-          <p className="skills-card-name"></p>
+          <p className="skills-card-name">Chakra UI</p>
         </div>
         <div className='skills-card'>
           <img src={mongo} alt="" className='skills-card-img' />
-          <p className="skills-card-name"></p>
+          <p className="skills-card-name">MongoDB</p>
         </div>
         <div className='skills-card'>
           <img src={express} alt="" className='skills-card-img' />
-          <p className="skills-card-name"></p>
+          <p className="skills-card-name">Express JS</p>
         </div>
         <div className='skills-card'>
           <img src={git} alt="" className='skills-card-img' />
-          <p className="skills-card-name"></p>
+          <p className="skills-card-name">GIT</p>
         </div>
         <div className='skills-card' >
           <img src={node} alt="" className='skills-card-img' />
-          <p className="skills-card-name"></p>
+          <p className="skills-card-name">Node JS</p>
         </div>
       </div>
 
@@ -106,7 +106,17 @@ const DIV=styled.div`
     border: 1px solid #6a4c1f;
 
 }
-
+.skildiv div p {
+    padding: 0px 0 7px 0;
+    margin: 0;
+    letter-spacing: 1px;
+}
+.skills-card-name {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+   
+}
 @media screen and (min-device-width: 320px) and (max-device-width: 480px){
   .skildiv {
     width: 70%;
