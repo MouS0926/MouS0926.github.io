@@ -5,18 +5,17 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { BiLogoGmail } from "react-icons/bi";
 import { Link } from "react-scroll";
 import { HiDownload } from 'react-icons/hi';
+import resume from '../resume/Moumita-Sarkar-Resume.pdf'
+
+
 export const About = () => {
 
 
-  const resumeUrl = '../resume/Moumita-Sarkar-Resume.pdf';
-  const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = resumeUrl;
-    link.target = '_blank'; // Open in a new tab
-    link.download = 'resume.pdf'; // Set the download attribute
-    link.click();
-  };
+  const resumeUrl = 'https://drive.google.com/file/d/1bEonWvKeXAwk48PT79geIm2AVjFeYrEF/view?usp=sharing';
+  
 
+
+ 
 
 
   return (
@@ -57,9 +56,15 @@ export const About = () => {
         </a>
 
 
-        <button onClick={handleDownload}>
+      
+{/* 
+      <a href={resume} target="_blank"  id="resume-button-2" download>
+      <button  >
       Download Resume
     </button>
+      </a> */}
+
+  
       
 </div>
 

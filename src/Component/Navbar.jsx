@@ -106,8 +106,8 @@ export default function Navbar() {
               <li>
               
              
-        <a href={resume}   download>
-            <button className="nav-link resume resume-btn" target="_blank" id="resume-button-1">
+        <a href={resume} target="_blank"  download>
+            <button className="nav-link resume resume-btn"  id="resume-button-1">
                 Resume <HiDownload/>
                 </button>
                 
@@ -126,6 +126,7 @@ export default function Navbar() {
       </section>
       <section id="about" className='aboutbg about section'>
         <About/>
+       
       </section>
      
       <section id="skills" className='skillbg'>
