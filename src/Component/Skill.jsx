@@ -117,6 +117,7 @@ const DIV=styled.div`
     font-weight: 600;
    
 }
+
 @media screen and (min-device-width: 320px) and (max-device-width: 480px){
   .skildiv {
     width: 70%;
@@ -124,6 +125,13 @@ const DIV=styled.div`
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 10px;
+}
+.skills-card-name {
+    font-size: 12px;
+ }
+
+ .skills-card img{
+  width:100px;
 }
 }
 `
