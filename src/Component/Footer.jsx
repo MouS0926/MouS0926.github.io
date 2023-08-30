@@ -6,7 +6,7 @@ export default function Footer() {
 
   return (
     <DIV>
-        Designed and built by ❤️ Moumita Sarkar, {currentYear} All right reserved.
+        Designed and Developed by ❤️ Moumita Sarkar, {currentYear} All Rights Reserved.
         
         </DIV>
   )

@@ -193,7 +193,7 @@ li:hover {
   }
 
   .nav__icon {
-    color: #000;
+    color: #d2e639;
   }
 }
 
@@ -271,7 +271,9 @@ width: 40%;
 }
 
 
-
+.logocls{
+  width:160px
+}
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
 

@@ -9,7 +9,7 @@ import { Skill } from './Skill';
 import { Contact } from './Contact';
 import resume from '../resume/Moumita-Sarkar-Resume.pdf'
 import { HiDownload } from "react-icons/hi";
-
+import logo from "../image/namelogo.png"
 import GitHubCalendar from 'react-github-calendar';
 import Github from './Github';
 import Footer from './Footer';
@@ -45,7 +45,8 @@ export default function Navbar() {
         <nav className="nav__container" id="nav-menu">
           <div className="nav__logo">
             <Link to="about" smooth={true} onClick={toggleMenu}>
-              LOGO
+              
+              <img src={logo} alt="" srcset="" className='logocls' />
             </Link>
           </div>
           <div className="nav__toggle" onClick={toggleMenu}>
