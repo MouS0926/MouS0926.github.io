@@ -74,10 +74,37 @@ export const About = () => {
 }
 const DIV=styled.div`
 @media screen and (min-device-width: 320px) and (max-device-width: 480px)
+
+
 {
+
+
+  section{
+    height: auto;
+  }
   .abtContact a div {
     padding: 17px 17px;
     font-size: 20px;
+}
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 576px)
+{
+
+  section{
+    height: auto;
+  }
+  .abtContact a div {
+    padding: 17px 17px;
+    font-size: 20px;
+}
+
+
+.abtContact {
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    flex-wrap: wrap;
 }
 }
 `

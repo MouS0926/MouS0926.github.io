@@ -141,6 +141,9 @@ color:#f0ecec!important;
 }
 @media screen and (min-device-width: 320px) and (max-device-width: 480px)
 {
+  section{
+    height: auto;
+  }
   .projbg {
     height: auto;
 }
@@ -149,6 +152,30 @@ color:#f0ecec!important;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(1,1fr);
+  gap:20px;
+}
+
+.projCap {
+ 
+    margin-top: 59px;
+}
+}
+
+
+
+@media screen and (min-device-width: 481px) and (max-device-width: 767px)
+{
+  section{
+    height: auto;
+  }
+  .projbg {
+    height: auto;
+}
+  .projectdiv{
+  width:90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
   gap:20px;
 }
 

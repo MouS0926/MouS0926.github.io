@@ -13,14 +13,19 @@ import express from "../tech-icon/express.png"
 import typs from "../tech-icon/typescript.png"
 import node from "../tech-icon/node.png"
 import chakra from "../tech-icon/chakra.png"
+import vscode from "../tech-icon/visual-studio.png"
+import ps from "../tech-icon/photoshop.png"
+import postman from "../tech-icon/postman.png"
 import GitHubCalendar from 'react-github-calendar'
 
 export const Skill = () => {
   return (
     <DIV>
+       
+
         <div className='skillCap'> 
-          <p> <span>MY</span>  SKILLS</p>
-        </div> 
+          <p> <span>FRONT</span>  END</p>
+        </div>
 
       <div className="skildiv">
           <div className='skills-card'>
@@ -55,6 +60,25 @@ export const Skill = () => {
           <img src={chakra} alt="" className='skills-card-img' />
           <p className="skills-card-name">Chakra UI</p>
         </div>
+       
+      </div>
+
+      <div className="skillCapsection">
+      <div className='skillCap'> 
+          <p> <span>BACK</span>  END</p>
+        </div>
+        <div className='skillCap'> 
+          <p> <span>TOOLSETS</span> </p>
+        </div>
+</div>   
+
+<div className="skillsectiontwo">
+
+
+
+        
+      <div className="skildiv">
+         
         <div className='skills-card'>
           <img src={mongo} alt="" className='skills-card-img' />
           <p className="skills-card-name">MongoDB</p>
@@ -63,15 +87,40 @@ export const Skill = () => {
           <img src={express} alt="" className='skills-card-img' />
           <p className="skills-card-name">Express JS</p>
         </div>
-        <div className='skills-card'>
-          <img src={git} alt="" className='skills-card-img' />
-          <p className="skills-card-name">GIT</p>
-        </div>
+      
         <div className='skills-card' >
           <img src={node} alt="" className='skills-card-img' />
           <p className="skills-card-name">Node JS</p>
         </div>
       </div>
+
+      
+
+        <div className="skildiv">
+        <div className='skills-card'>
+           <img src={git} alt="" className='skills-card-img' />
+           <p className="skills-card-name">GIT</p>
+         </div>
+
+         <div className='skills-card'>
+           <img src={vscode} alt="" className='skills-card-img' />
+           <p className="skills-card-name">Visual Studio</p>
+         </div>
+
+         <div className='skills-card'>
+           <img src={postman} alt="" className='skills-card-img' />
+           <p className="skills-card-name">POSTMAN</p>
+         </div>
+
+         <div className='skills-card'>
+           <img src={ps} alt="" className='skills-card-img' />
+           <p className="skills-card-name">PHOTOSHOP</p>
+         </div>
+        
+       </div>
+
+</div>
+
 
 
 
@@ -92,18 +141,48 @@ const DIV=styled.div`
 .skillCap p span{
   color:#f5b238
 }
-.skildiv{
+/* .skildiv{
   width:80%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(4,1fr);
   gap:10px;
+} */
+
+.skillsectiontwo{
+  width:90%;
+  margin: 0 auto;
+  display: flex;
+  
+  align-items: center; 
+  justify-content: center; 
+  gap: 10px;
+}
+
+.skillCapsection{
+  width:90%;
+  margin: 0 auto;
+  display: flex;
+  
+  align-items: center; 
+  justify-content: space-around; 
+  gap: 10px;
+}
+.skildiv {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  
+  align-items: center; 
+  justify-content: center; 
+  gap: 10px;
 }
 
 .skildiv div{
   background-color: #0b0d2c;
     border-radius: 10px;
     border: 1px solid #6a4c1f;
+    padding: 5px;
 
 }
 .skildiv div p {
@@ -118,20 +197,77 @@ const DIV=styled.div`
    
 }
 
+
+
 @media screen and (min-device-width: 320px) and (max-device-width: 480px){
+  section{
+    height: auto;
+  }
+
   .skildiv {
     width: 70%;
     margin: 2px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+    margin: 0 auto;
 }
 .skills-card-name {
     font-size: 12px;
  }
 
+ .bJcSTw .skillsectiontwo {
+   
+    flex-direction: column;
+}
+
  .skills-card img{
   width:100px;
 }
+ .skildiv div {
+  padding: 0;
+ }
+.skillsectiontwo {
+   
+   flex-direction: column;
 }
+}
+
+
+//tab-size
+@media screen and (min-device-width: 481px) and (max-device-width: 767px){
+  section{
+    height: auto;
+  }
+
+  .skildiv {
+    width: 70%;
+    margin: 2px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+    margin: 0 auto;
+}
+.skills-card-name {
+    font-size: 12px;
+ }
+
+ .bJcSTw .skillsectiontwo {
+   
+    flex-direction: column;
+}
+
+ .skills-card img{
+  width:100px;
+}
+ .skildiv div {
+  padding: 0;
+ }
+.skillsectiontwo {
+   
+   flex-direction: column;
+}
+}
+
+
 `

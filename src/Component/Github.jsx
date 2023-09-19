@@ -6,8 +6,8 @@ import styled from "styled-components"
 export default function Github() {
 
     const explicitTheme = {
-        light: ['#f0f0f0', '#c4edde', '#7ac7c4', '#f73859', '#384259'],
-        dark: ['#615f5f', '#4D455D', '#7DB9B6', '#F5E9CF', '#E96479'],
+        light: ['#f0f0f0', '#c4edde', '#7ac7c4', '#f73859', '#cfd6e4'],
+        dark: ['#9a979762', '#d1c7e3', '#7DB9B6', '#F5E9CF', '#E96479'],
       };
       
  
@@ -57,6 +57,7 @@ const DIV=styled.div`
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
   width:100%;
   font-family: 'Poppins', sans-serif;
+  color:#fff;
   .react-activity-calendar{
     margin:  auto;
   }

@@ -122,7 +122,7 @@ export default function Navbar() {
           </ul>
         </nav>
       </header>
-      <section id="home" className='homebg'>
+      <section id="home" className='homebg' style={{"height":"100vh"}}>
         <Home/>
       </section>
       <section id="about" className='aboutbg about section'>

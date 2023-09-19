@@ -151,13 +151,13 @@ li:hover {
 .nav__menu-open {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #080a2c;
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .nav__menu li {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   padding: 14px 10px 7px 17px;
 }
 .resume-btn {
@@ -529,7 +529,7 @@ gap: 10px;
 
 @media screen and (min-device-width: 320px) and (max-device-width: 480px) { 
   section{
-    height: 100vh;
+    height: auto;
   }
   .line1 {
   
@@ -582,4 +582,11 @@ font-size: 16px;
     height: auto;
 }
 
+}
+
+
+@media screen and (min-device-width: 481px) and (max-device-width: 767px) { 
+  section{
+    height: auto;
+  }
 }

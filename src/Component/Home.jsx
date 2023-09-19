@@ -1,7 +1,11 @@
 import React from 'react'
 import profileImg from "../image/profile-img.png"
+import styled from "styled-components"
+
+
 export const Home = () => {
   return (
+   < DIV>
     <div class="nav-link home">
 
 
@@ -62,5 +66,20 @@ export const Home = () => {
 
 
 </div>
+</DIV>
   )
 }
+
+
+
+const DIV=styled.div`
+@media screen and (min-device-width: 320px) and (max-device-width: 480px)
+{
+  section{
+    height: 100vh;
+  }
+}
+
+
+
+`
