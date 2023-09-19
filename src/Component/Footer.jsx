@@ -17,5 +17,7 @@ const DIV=styled.div`
     color: #d8d0d0;
     font-size: 20px;
     padding: 30px;
+
+
 `
 

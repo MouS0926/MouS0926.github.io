@@ -131,7 +131,36 @@ const DIV=styled.div`
     font-size: 15px;
     color: #c1bfbf;
 }
-
+.text {
+    font-size: 13px;
+    color: #cdcdcd;
+    width: 100%;
+    padding: 13px 22px;
+ 
+}
 
 }
+
+@media screen and (min-device-width: 481px) and (max-device-width: 767px){
+  .contactDiv {
+    display: flex;
+    flex-direction: column;
+}
+  .text {
+    font-size: 15px;
+    color: #cdcdcd;
+    width: 100%;
+    padding: 13px 22px;
+ 
+}
+ .contacts {
+    width: 100%;
+    text-align: justify;
+}
+}
 `
+
+
+
+
+

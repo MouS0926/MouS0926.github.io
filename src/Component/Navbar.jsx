@@ -38,6 +38,21 @@ export default function Navbar() {
     };
   }, []);
 
+
+  const handleDownload = () => {
+   
+    const link = document.createElement('a');
+    
+   
+    link.href = 'https://drive.google.com/uc?export=download&id=1bEonWvKeXAwk48PT79geIm2AVjFeYrEF';
+    
+   
+    link.setAttribute('download', 'your-resume.pdf');
+    link.setAttribute('target', '_blank');
+   
+    link.click();
+  };
+
  
   return (
     <div>
@@ -107,12 +122,20 @@ export default function Navbar() {
               <li>
               
              
-        <a href={resume} target="_blank"  download>
-            <button className="nav-link resume resume-btn"  id="resume-button-1">
+        <a href="https://drive.google.com/file/d/1bEonWvKeXAwk48PT79geIm2AVjFeYrEF/view?usp=sharing" target="__blank"  download>
+            <button className="nav-link resume resume-btn"  id="resume-button-1" onClick={handleDownload}>
                 Resume <HiDownload/>
                 </button>
                 
             </a>
+
+            {/* <button
+        className="nav-link resume resume-btn"
+        id="resume-button-1"
+        onClick={handleDownload}
+      >
+        Resume <HiDownload />
+      </button> */}
 
               
               
@@ -144,7 +167,7 @@ export default function Navbar() {
          </section>
 
 
-      <section id="contact" className='projbg' width="50vh">
+      <section id="contact" className='contactbg'>
         <Contact/>
          </section>
 

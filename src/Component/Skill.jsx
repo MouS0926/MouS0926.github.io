@@ -68,7 +68,7 @@ export const Skill = () => {
           <p> <span>BACK</span>  END</p>
         </div>
         <div className='skillCap'> 
-          <p> <span>TOOLSETS</span> </p>
+          <p> <span>TOOL</span>SETS </p>
         </div>
 </div>   
 

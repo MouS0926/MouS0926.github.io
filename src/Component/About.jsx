@@ -11,8 +11,20 @@ import resume from '../resume/Moumita-Sarkar-Resume.pdf'
 export const About = () => {
 
 
-  const resumeUrl = 'https://drive.google.com/file/d/1bEonWvKeXAwk48PT79geIm2AVjFeYrEF/view?usp=sharing';
-  
+
+  const handleDownload = () => {
+   
+    const link = document.createElement('a');
+    
+   
+    link.href = 'https://drive.google.com/uc?export=download&id=1bEonWvKeXAwk48PT79geIm2AVjFeYrEF';
+    
+   
+    link.setAttribute('download', 'your-resume.pdf');
+    link.setAttribute('target', '_blank');
+   
+    link.click();
+  };
 
 
  
@@ -47,13 +59,16 @@ export const About = () => {
       <a href="mailto:sarkarmoumita314@gmail.com" id="contact-email"><div><BiLogoGmail/></div></a>
       
 
-        <a href="https://drive.google.com/file/d/1bEonWvKeXAwk48PT79geIm2AVjFeYrEF/view?usp=sharing" target="_blank"  id="resume-button-2"  download>
-          <div>
-            Resume
-             </div>
+      
+      <a href="https://drive.google.com/file/d/1bEonWvKeXAwk48PT79geIm2AVjFeYrEF/view?usp=sharing" target="__blank"  download>
+            <button className="resumeBtn"  id="resume-button-1" onClick={handleDownload}>
+                Resume <HiDownload/>
+                </button>
+                
+            </a>
 
            
-        </a>
+      
 
 
       
@@ -73,6 +88,17 @@ export const About = () => {
   )
 }
 const DIV=styled.div`
+
+.resumeBtn{
+  background-color: #3e4289;
+    padding: 17px 40px;
+   border: 0;
+    border-radius: 5px;
+    font-size: 22px;
+    color: #fff;
+    box-shadow: rgb(50 50 106 / 25%) 0px 13px 27px -5px, rgb(7 7 8 / 78%) 0px 8px 16px -8px;
+}
+
 @media screen and (min-device-width: 320px) and (max-device-width: 480px)
 
 
@@ -85,6 +111,22 @@ const DIV=styled.div`
   .abtContact a div {
     padding: 17px 17px;
     font-size: 20px;
+}
+
+.abtContainer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 10px 2px;
+}
+
+.ab-content {
+    width: 100%;
+    font-size: 18px;
+   
+}
+.ab-img {
+    width: 100%;
 }
 }
 
@@ -105,6 +147,20 @@ const DIV=styled.div`
     justify-content: space-around;
     gap: 5px;
     flex-wrap: wrap;
+}
+.ab-content {
+    width: 100%;
+    font-size: 18px;
+   
+}
+.ab-img {
+    width: 100%;
+}
+.abtContainer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 10px 2px;
 }
 }
 `

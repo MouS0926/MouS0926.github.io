@@ -412,16 +412,16 @@ width: 40%;
 
 /* about */
 
-.aboutbg,.skillbg,.projbg,.gitbg{
+.aboutbg,.skillbg,.projbg,.gitbg,.contactbg{
   background-color: #1c1e3e;
   
 }
 .projbg{
-  height: 150vh;
+  height: auto;
 }
 
 .gitbg{
-  
+  height: auto;
 }
 .aboutCap{
   display: flex;
@@ -443,11 +443,7 @@ width: 40%;
 .aboutCap p span{
  color: #f5b238;
 }
-.abtContainer{
-  display: flex;
-  width: 100%;
-  padding: 10px 40px;
-}
+
 .ab-img{
 width: 50%;
 }
@@ -461,6 +457,7 @@ width: 50%;
 width: 50%;
 font-size: 20px;
 color: #fff;
+padding: 10px;
 }
 .ab-content p {
   font-family: 'Poppins', sans-serif;
@@ -527,6 +524,13 @@ gap: 10px;
   fill: #1c1e3e;
 }
 
+.abtContainer {
+  display: flex;
+  width: 100%;
+  
+  padding: 10px 2px;
+}
+
 @media screen and (min-device-width: 320px) and (max-device-width: 480px) { 
   section{
     height: auto;
@@ -589,4 +593,18 @@ font-size: 16px;
   section{
     height: auto;
   }
+
+  .abtContainer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 10px 2px;
+}
+.ab-img {
+  width: 100%;
+}
+.ab-content {
+  width: 100%;
+  
+}
 }
