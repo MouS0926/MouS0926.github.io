@@ -128,6 +128,12 @@ const DIV=styled.div`
 .ab-img {
     width: 100%;
 }
+
+ .resumeBtn {
+    background-color: #3e4289;
+    padding: 10px 24px;
+    font-size: 16px;
+}
 }
 
 @media screen and (min-device-width: 481px) and (max-device-width: 576px)
