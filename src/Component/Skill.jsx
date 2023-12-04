@@ -5,6 +5,8 @@ import css from "../tech-icon/css.png"
 import js from "../tech-icon/Js.png"
 import react from "../tech-icon/react.png"
 import mongo from "../tech-icon/mongo.png"
+import angular from "../tech-icon/angular.png"
+import chatgpt from "../tech-icon/chatgpt.png"
 // import next from "../tech-icon/next.png"
 import redux from "../tech-icon/redux.png"
 import git from "../tech-icon/git.png"
@@ -59,6 +61,9 @@ export const Skill = () => {
         <div className='skills-card'>
           <img src={chakra} alt="" className='skills-card-img' />
           <p className="skills-card-name">Chakra UI</p>
+        </div><div className='skills-card'>
+          <img src={angular} alt="" className='skills-card-img' />
+          <p className="skills-card-name">Angular JS</p>
         </div>
        
       </div>
@@ -80,17 +85,22 @@ export const Skill = () => {
       <div className="skildiv">
          
         <div className='skills-card'>
-          <img src={mongo} alt="" className='skills-card-img' />
+          <img src={mongo} alt="MongoDB" className='skills-card-img' />
           <p className="skills-card-name">MongoDB</p>
         </div>
         <div className='skills-card'>
-          <img src={express} alt="" className='skills-card-img' />
+          <img src={express} alt="Express JS" className='skills-card-img' />
           <p className="skills-card-name">Express JS</p>
         </div>
       
         <div className='skills-card' >
-          <img src={node} alt="" className='skills-card-img' />
+          <img src={node} alt="Node JS" className='skills-card-img' />
           <p className="skills-card-name">Node JS</p>
+        </div>
+
+        <div className='skills-card' >
+          <img src={chatgpt} alt="OpenAI" className='skills-card-img' />
+          <p className="skills-card-name">OpenAI</p>
         </div>
       </div>
 

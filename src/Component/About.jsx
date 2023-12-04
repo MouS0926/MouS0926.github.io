@@ -44,10 +44,9 @@ export const About = () => {
         </div> 
 
      <p>
-     An ambitious and dedicated Full Stack Web Developer driven to explore diverse tech 
-      stacks and environments prevalent in the industry. Proficient in the MERN stack,
-       eager to embark on a rewarding career with an organization that 
-      fosters continuous skill improvement and growth in alignment with its objectives.
+     An ambitious and dedicated Full Stack Web Developer driven to explore diverse tech stacks and environments prevalent in the industry. 
+     Proficient in the MERN stack, eager to embark on a rewarding career with an organization that fosters continuous skill improvement and growth in 
+     alignment with its objectives. Additionally, adept in prompt engineering and utilizing generative AI for accelerated learning of new stacks within a shorter timeframe
 
      </p>
 
@@ -122,7 +121,8 @@ const DIV=styled.div`
 
 .ab-content {
     width: 100%;
-    font-size: 18px;
+    font-size: 19px;
+    
    
 }
 .ab-img {
