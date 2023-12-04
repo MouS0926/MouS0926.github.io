@@ -59,7 +59,7 @@ export const About = () => {
       
 
       
-      <a href="https://drive.google.com/file/d/1bEonWvKeXAwk48PT79geIm2AVjFeYrEF/view?usp=sharing" target="__blank"  download>
+      <a href="https://drive.google.com/file/d/1O2MNobDtkiAiwXVWFvLr5Ce_4W3PG7x6/view?usp=sharing" target="__blank"  download>
             <button className="resumeBtn"  id="resume-button-1" onClick={handleDownload}>
                 Resume <HiDownload/>
                 </button>

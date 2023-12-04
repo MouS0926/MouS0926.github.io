@@ -44,7 +44,7 @@ export default function Navbar() {
     const link = document.createElement('a');
     
    
-    link.href = 'https://drive.google.com/uc?export=download&id=1bEonWvKeXAwk48PT79geIm2AVjFeYrEF';
+    link.href = 'https://drive.google.com/file/d/1O2MNobDtkiAiwXVWFvLr5Ce_4W3PG7x6/view?usp=sharing';
     
    
     link.setAttribute('download', 'your-resume.pdf');
@@ -122,7 +122,7 @@ export default function Navbar() {
               <li>
               
              
-        <a href="https://drive.google.com/file/d/1bEonWvKeXAwk48PT79geIm2AVjFeYrEF/view?usp=sharing" target="__blank"  download>
+        <a href="https://drive.google.com/file/d/1O2MNobDtkiAiwXVWFvLr5Ce_4W3PG7x6/view?usp=sharing" target="__blank"  download>
             <button className="nav-link resume resume-btn"  id="resume-button-1" onClick={handleDownload}>
                 Resume <HiDownload/>
                 </button>
