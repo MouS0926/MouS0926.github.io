@@ -39,12 +39,14 @@ export default function Navbar() {
   }, []);
 
 
+
+
   const handleDownload = () => {
    
     const link = document.createElement('a');
     
    
-    link.href = 'https://drive.google.com/file/d/1O2MNobDtkiAiwXVWFvLr5Ce_4W3PG7x6/view?usp=sharing';
+    link.href = 'https://drive.google.com/uc?export=download&id=1bEonWvKeXAwk48PT79geIm2AVjFeYrEF';
     
    
     link.setAttribute('download', 'your-resume.pdf');
@@ -52,6 +54,7 @@ export default function Navbar() {
    
     link.click();
   };
+
 
  
   return (
@@ -128,6 +131,10 @@ export default function Navbar() {
                 </button>
                 
             </a>
+
+
+
+           
 
             {/* <button
         className="nav-link resume resume-btn"
