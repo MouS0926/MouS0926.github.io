@@ -10,7 +10,7 @@ export const Home = () => {
 
 
 {/* animation */}
-{/* <div class="area" >
+<div class="area" >
             <ul class="circles">
                     <li></li>
                     <li></li>
@@ -23,7 +23,7 @@ export const Home = () => {
                     <li></li>
                    <li></li>
             </ul>
-    </div > */}
+    </div >
 
 {/* animation */}
 
