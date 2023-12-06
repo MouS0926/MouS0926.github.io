@@ -20,7 +20,7 @@ export const About = () => {
     link.href = 'https://drive.google.com/uc?export=download&id=1O2MNobDtkiAiwXVWFvLr5Ce_4W3PG7x6';
     
    
-    link.setAttribute('download', 'your-resume.pdf');
+    link.setAttribute('download', 'Moumita-Sarkar-Resume.pdf');
     link.setAttribute('target', '_blank');
    
     link.click();
