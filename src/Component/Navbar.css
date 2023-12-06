@@ -1,0 +1,17 @@
+@media screen and (min-width: 769px) and (max-device-width: 825px) {
+  
+    .logocls {
+        width: 141px;
+    }
+    .resume-btn {
+       
+        border-radius: 2px;
+        padding: 6px 1px;
+        
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+  
+  }

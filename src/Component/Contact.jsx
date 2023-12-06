@@ -55,6 +55,7 @@ const DIV=styled.div`
   font-family: 'Poppins', sans-serif;
 .skillCap{
   color:#cdcdcd;
+  font-size: 2rem;
 }
 
 .skillCap p span{

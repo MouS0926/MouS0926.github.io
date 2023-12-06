@@ -123,6 +123,7 @@ const DIV=styled.div`
   font-family: 'Poppins', sans-serif;
 .projCap{
   color:#cdcdcd;
+  font-size: 2rem;
 }
 
 .projCap p span{

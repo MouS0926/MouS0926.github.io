@@ -13,6 +13,7 @@ import logo from "../image/namelogo.png"
 import GitHubCalendar from 'react-github-calendar';
 import Github from './Github';
 import Footer from './Footer';
+import "./Navbar.css"
 
 export default function Navbar() {
 
@@ -46,7 +47,7 @@ export default function Navbar() {
     const link = document.createElement('a');
     
    
-    link.href = 'https://drive.google.com/uc?export=download&id=1O2MNobDtkiAiwXVWFvLr5Ce_4W3PG7x6';
+    link.href = 'https://drive.google.com/uc?export=download&id=1k39aKPV1o9dH7CIkou3C9OtF8VkZs85d';
     
    
     link.setAttribute('download', 'Moumita-Sarkar-Resume.pdf');
@@ -62,7 +63,7 @@ export default function Navbar() {
  <header className={isMenuOpen ? 'nav nav-open' : 'nav'}>
         <nav className="nav__container" id="nav-menu">
           <div className="nav__logo">
-            <Link to="about" smooth={true} onClick={toggleMenu}>
+            <Link to="home" smooth={true} onClick={toggleMenu}>
               
               <img src={logo} alt="" srcset="" className='logocls' />
             </Link>
@@ -125,7 +126,7 @@ export default function Navbar() {
               <li>
               
              
-        <a href="https://drive.google.com/file/d/1O2MNobDtkiAiwXVWFvLr5Ce_4W3PG7x6/view?usp=sharing" target="__blank"  download>
+        <a href="https://drive.google.com/file/d/1k39aKPV1o9dH7CIkou3C9OtF8VkZs85d/view?usp=sharing" target="__blank"  download>
             <button className="nav-link resume resume-btn"  id="resume-button-1" onClick={handleDownload}>
                 Resume <HiDownload/>
                 </button>

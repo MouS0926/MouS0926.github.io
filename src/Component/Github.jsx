@@ -67,6 +67,7 @@ const DIV=styled.div`
 }
 
 .gitCap{
+  font-size: 2rem;
   color:#cdcdcd;
 }
 

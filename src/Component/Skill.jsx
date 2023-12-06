@@ -146,6 +146,7 @@ const DIV=styled.div`
   font-family: 'Poppins', sans-serif;
 .skillCap{
   color:#cdcdcd;
+  font-size: 2rem;
 }
 
 .skillCap p span{
@@ -278,6 +279,41 @@ const DIV=styled.div`
    flex-direction: column;
 }
 }
+
+@media screen and (min-device-width: 768px) and (max-device-width: 941px)
+{
+   .skildiv {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.skillsectiontwo {
+   
+   flex-direction: column;
+}
+
+}
+
+
+@media screen and (min-width: 942px) and (max-device-width: 1190px) {
+    .skildiv {
+      width: 95%;
+      margin: 0 auto;
+      display: grid;
+      
+      grid-template-columns: repeat(4,1fr);
+      gap: 10px;
+  }
+
+  .skillsectiontwo {
+   
+   flex-direction: column;
+}
+}
+
 
 
 `

@@ -17,7 +17,7 @@ export const About = () => {
     const link = document.createElement('a');
     
    
-    link.href = 'https://drive.google.com/uc?export=download&id=1O2MNobDtkiAiwXVWFvLr5Ce_4W3PG7x6';
+    link.href = 'https://drive.google.com/uc?export=download&id=1k39aKPV1o9dH7CIkou3C9OtF8VkZs85d';
     
    
     link.setAttribute('download', 'Moumita-Sarkar-Resume.pdf');
@@ -57,9 +57,9 @@ export const About = () => {
       <a href="https://github.com/MouS0926" target='__blank' id="contact-github"><div><BsGithub/></div></a>
       <a href="mailto:sarkarmoumita314@gmail.com" id="contact-email"><div><BiLogoGmail/></div></a>
       
-
+      {/* https://drive.google.com/file/d/1k39aKPV1o9dH7CIkou3C9OtF8VkZs85d/view?usp=sharing */}
       
-      <a href="https://drive.google.com/file/d/1O2MNobDtkiAiwXVWFvLr5Ce_4W3PG7x6/view?usp=sharing" target="__blank"  download>
+      <a href="https://drive.google.com/file/d/1k39aKPV1o9dH7CIkou3C9OtF8VkZs85d/view?usp=sharing" target="__blank"  download>
             <button className="resumeBtn"  id="resume-button-2" onClick={handleDownload}>
                 Resume <HiDownload/>
                 </button>
@@ -169,4 +169,45 @@ const DIV=styled.div`
     padding: 10px 2px;
 }
 }
+
+
+@media screen and (min-device-width: 768px) and (max-device-width: 941px)
+{
+  .abtContact a div {
+    background-color: #3e4289;
+    padding: 17px 21px;
+   font-size: 15px;
+}
+ .resumeBtn {
+   
+    padding: 14px 17px;
+    border-radius: 5px;
+    font-size: 18px;
+   
+}
+}
+
+
+
+@media screen and (min-width: 942px) and (max-device-width: 1192px) {
+  
+  .abtContact a div {
+    background-color: #3e4289;
+    padding: 17px 21px;
+   font-size: 15px;
+}
+ .resumeBtn {
+   
+    padding: 14px 17px;
+    border-radius: 5px;
+    font-size: 18px;
+   
+}
+
+
+}
+
+
+
+
 `
