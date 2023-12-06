@@ -46,7 +46,7 @@ export default function Navbar() {
     const link = document.createElement('a');
     
    
-    link.href = 'https://drive.google.com/uc?export=download&id=1bEonWvKeXAwk48PT79geIm2AVjFeYrEF';
+    link.href = 'https://drive.google.com/uc?export=download&id=1O2MNobDtkiAiwXVWFvLr5Ce_4W3PG7x6';
     
    
     link.setAttribute('download', 'your-resume.pdf');
