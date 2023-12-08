@@ -84,6 +84,8 @@ export const Skill = () => {
         
       <div className="skildiv">
          
+
+         
         <div className='skills-card'>
           <img src={mongo} alt="MongoDB" className='skills-card-img' />
           <p className="skills-card-name">MongoDB</p>

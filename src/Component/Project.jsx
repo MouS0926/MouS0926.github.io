@@ -139,6 +139,9 @@ const DIV=styled.div`
 .projectdiv div img{
   width:100%;
 }
+.project-title{
+  font-size:20px;
+}
 .projectdiv div{
   background-color: #0b0d2c;
     padding: 14px;

@@ -7,7 +7,7 @@ import { About } from './About';
 import Project from './Project';
 import { Skill } from './Skill';
 import { Contact } from './Contact';
-import resume from '../resume/Moumita-Sarkar-Resume.pdf'
+// import resume from '../resume/Moumita-Sarkar-Resume.pdf'
 import { HiDownload } from "react-icons/hi";
 import logo from "../image/namelogo.png"
 import GitHubCalendar from 'react-github-calendar';
@@ -39,15 +39,25 @@ export default function Navbar() {
     };
   }, []);
 
-
-
+//working fine
+  const handleDownload1 = () => {
+    const anchor = document.createElement("a");
+    anchor.href =
+      process.env.PUBLIC_URL + "/Resume/" + "Moumita-Sarkar-Resume.pdf";
+    anchor.download = "Moumita-Sarkar-Resume.pdf";
+    anchor.click();
+    window.open(
+      "https://drive.google.com/file/d/13HgYCLmHciF3K_yeeCU_3I-rua9BeA7E/view?usp=sharing",
+      "_blank"
+    );
+  };
 
   const handleDownload = () => {
    
     const link = document.createElement('a');
     
-   
-    link.href = 'https://drive.google.com/uc?export=download&id=1k39aKPV1o9dH7CIkou3C9OtF8VkZs85d';
+    // https://drive.google.com/file/d/13HgYCLmHciF3K_yeeCU_3I-rua9BeA7E/view?usp=sharing
+    link.href = 'https://drive.google.com/uc?export=download&id=13HgYCLmHciF3K_yeeCU_3I-rua9BeA7E';
     
    
     link.setAttribute('download', 'Moumita-Sarkar-Resume.pdf');
@@ -126,13 +136,14 @@ export default function Navbar() {
               <li>
               
              
-        <a href="https://drive.google.com/file/d/1k39aKPV1o9dH7CIkou3C9OtF8VkZs85d/view?usp=sharing" target="__blank"  download>
-            <button className="nav-link resume resume-btn"  id="resume-button-1" onClick={handleDownload}>
+        {/* <a href="https://drive.google.com/file/d/13HgYCLmHciF3K_yeeCU_3I-rua9BeA7E/view?usp=sharing" target="__blank"  download>
+          
+                
+            </a> */}
+            
+            <button className="nav-link resume resume-btn"  id="resume-button-1" onClick={handleDownload1}>
                 Resume <HiDownload/>
                 </button>
-                
-            </a>
-
 
 
            
@@ -153,7 +164,7 @@ export default function Navbar() {
           </ul>
         </nav>
       </header>
-      <section id="home" className='homebg' style={{"height":"100vh"}}>
+      <section id="home" className='homebg'>
         <Home/>
       </section>
       <section id="about" className='aboutbg about section'>
