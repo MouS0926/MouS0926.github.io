@@ -5,12 +5,29 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { BiLogoGmail } from "react-icons/bi";
 import { Link } from "react-scroll";
 import { HiDownload } from 'react-icons/hi';
-// import resume from '../resume/Moumita-Sarkar-Resume.pdf'
+
 
 
 export const About = () => {
 
-  const handleDownload1 = () => {
+
+
+  // const handleDownload = () => {
+   
+  //   const link = document.createElement('a');
+    
+   
+  //   link.href = 'https://drive.google.com/uc?export=download&id=1k39aKPV1o9dH7CIkou3C9OtF8VkZs85d';
+    
+   
+  //   link.setAttribute('download', 'Moumita-Sarkar-Resume.pdf');
+  //   link.setAttribute('target', '_blank');
+   
+  //   link.click();
+  // };
+
+
+  const handleDownload = () => {
     const anchor = document.createElement("a");
     anchor.href =
       process.env.PUBLIC_URL + "/Resume/" + "Moumita-Sarkar-Resume.pdf";
@@ -21,22 +38,6 @@ export const About = () => {
       "_blank"
     );
   };
-
-  const handleDownload = () => {
-   
-    const link = document.createElement('a');
-      // https://drive.google.com/file/d/13HgYCLmHciF3K_yeeCU_3I-rua9BeA7E/view?usp=sharing
-   
-    link.href = 'https://drive.google.com/uc?export=download&id=13HgYCLmHciF3K_yeeCU_3I-rua9BeA7E';
-    
-   
-    link.setAttribute('download', 'Moumita-Sarkar-Resume.pdf');
-    link.setAttribute('target', '_blank');
-   
-    link.click();
-  };
-
-
  
 
 
@@ -67,14 +68,13 @@ export const About = () => {
       <a href="https://github.com/MouS0926" target='__blank' id="contact-github"><div><BsGithub/></div></a>
       <a href="mailto:sarkarmoumita314@gmail.com" id="contact-email"><div><BiLogoGmail/></div></a>
       
-
+      {/* https://drive.google.com/file/d/1k39aKPV1o9dH7CIkou3C9OtF8VkZs85d/view?usp=sharing */}
       
-      <a href="https://drive.google.com/file/d/13HgYCLmHciF3K_yeeCU_3I-rua9BeA7E/view?usp=sharing" target="__blank"  download>
-            <button className="resumeBtn"  id="resume-button-2" onClick={handleDownload1}>
+          <button className="resumeBtn"  id="resume-button-2" onClick={handleDownload}>
                 Resume <HiDownload/>
                 </button>
                 
-            </a>
+          
 
            
       

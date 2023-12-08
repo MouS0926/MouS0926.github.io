@@ -39,8 +39,29 @@ export default function Navbar() {
     };
   }, []);
 
-//working fine
-  const handleDownload1 = () => {
+
+
+  
+
+  //https://drive.google.com/uc?export=download&id=13HgYCLmHciF3K_yeeCU_3I-rua9BeA7E
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    const downloadLink = 'https://drive.google.com/file/d/13HgYCLmHciF3K_yeeCU_3I-rua9BeA7E/view?usp=sharing';
+    window.open(downloadLink, '_blank');
+    link.href = downloadLink;
+    link.setAttribute('download', 'Moumita-Sarkar-Resume.pdf');
+    link.setAttribute('target', '_blank');
+  
+    // Create a click event and dispatch it to open the link in a new tab
+    const clickEvent = new MouseEvent('click', {
+      bubbles: true,
+      cancelable: true,
+      view: window,
+    });
+    link.dispatchEvent(clickEvent);
+  };
+  
+  const handleDownload2 = () => {
     const anchor = document.createElement("a");
     anchor.href =
       process.env.PUBLIC_URL + "/Resume/" + "Moumita-Sarkar-Resume.pdf";
@@ -51,22 +72,6 @@ export default function Navbar() {
       "_blank"
     );
   };
-
-  const handleDownload = () => {
-   
-    const link = document.createElement('a');
-    
-    // https://drive.google.com/file/d/13HgYCLmHciF3K_yeeCU_3I-rua9BeA7E/view?usp=sharing
-    link.href = 'https://drive.google.com/uc?export=download&id=13HgYCLmHciF3K_yeeCU_3I-rua9BeA7E';
-    
-   
-    link.setAttribute('download', 'Moumita-Sarkar-Resume.pdf');
-    link.setAttribute('target', '_blank');
-   
-    link.click();
-  };
-
-
  
   return (
     <div>
@@ -136,14 +141,12 @@ export default function Navbar() {
               <li>
               
              
-        {/* <a href="https://drive.google.com/file/d/13HgYCLmHciF3K_yeeCU_3I-rua9BeA7E/view?usp=sharing" target="__blank"  download>
-          
-                
-            </a> */}
-            
-            <button className="nav-link resume resume-btn"  id="resume-button-1" onClick={handleDownload1}>
+           <button className="nav-link resume resume-btn"  id="resume-button-1" onClick={handleDownload2}>
                 Resume <HiDownload/>
                 </button>
+                
+          
+
 
 
            
