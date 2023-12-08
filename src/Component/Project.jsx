@@ -19,6 +19,42 @@ export default function Project() {
 
     <div className="projectdiv ">
 
+
+
+    <div className='project-card'>
+        <img src={arthub} alt="arthub"  />
+        <h5 className='project-title'>💻 ARTHUB 💻</h5>
+        <p className='project-description'>
+         A friendly online platform where creators share their creativity through diverse categories like photography, digital art, and more.
+         
+         </p>
+        <h5 className='project-tech-stack'><span>Tech Stacks : </span> React , React-Redux , TypeScript , Chakra UI , Styled-components, Node JS , Expres JS , MongoDB</h5>
+         <hr />
+          <span className="linkdiv">
+              <a href="https://github.com/MouS0926/ARTHUB--Image-posting-website-" target='_blank' className='project-github-link'> <BsGithub/></a>
+              <a href="https://arthub-rosy.vercel.app/" target='_blank' className='project-deployed-link'> <FiExternalLink/></a>
+          </span>
+      
+       </div>
+
+       <div className='project-card'>
+        <img src={bookhubx} alt="bookhubx"  />
+        <h5 className='project-title'>💻 BookHubX 💻</h5>
+        <p className='project-description'>
+        BookHubX: A unique platform combining a bookstore with a vibrant reading community. Discover, 
+        purchase, and engage with books. Intelligent chatbot for personalized recommendations.
+         
+         </p>
+        <h5 className='project-tech-stack'><span>Tech Stacks : </span> Angular , Telwind Css , Node JS , Expres JS , MongoDB, OpenAI</h5>
+         <hr />
+          <span className="linkdiv">
+              <a href="https://github.com/MouS0926/BookHubX" target='_blank' className='project-github-link'> <BsGithub/></a>
+              <a href="https://book-hub-x.vercel.app/" target='_blank' className='project-deployed-link'> <FiExternalLink/></a>
+          </span>
+      
+       </div>
+
+
       <div className='project-card'>
         <img src={wish} alt=""  />
         <h5 className='project-title'>💻 Wish Bucket 💻</h5>
@@ -77,38 +113,7 @@ export default function Project() {
        </div> */}
 
 
-       <div className='project-card'>
-        <img src={arthub} alt="arthub"  />
-        <h5 className='project-title'>💻 ARTHUB 💻</h5>
-        <p className='project-description'>
-         A friendly online platform where creators share their creativity through diverse categories like photography, digital art, and more.
-         
-         </p>
-        <h5 className='project-tech-stack'><span>Tech Stacks : </span> React , React-Redux , TypeScript , Chakra UI , Styled-components, Node JS , Expres JS , MongoDB</h5>
-         <hr />
-          <span className="linkdiv">
-              <a href="https://github.com/MouS0926/ARTHUB--Image-posting-website-" target='_blank' className='project-github-link'> <BsGithub/></a>
-              <a href="https://arthub-rosy.vercel.app/" target='_blank' className='project-deployed-link'> <FiExternalLink/></a>
-          </span>
-      
-       </div>
-
-       <div className='project-card'>
-        <img src={bookhubx} alt="bookhubx"  />
-        <h5 className='project-title'>💻 BookHubX 💻</h5>
-        <p className='project-description'>
-        BookHubX: A unique platform combining a bookstore with a vibrant reading community. Discover, 
-        purchase, and engage with books. Intelligent chatbot for personalized recommendations.
-         
-         </p>
-        <h5 className='project-tech-stack'><span>Tech Stacks : </span> Angular , Telwind Css , Node JS , Expres JS , MongoDB, OpenAI</h5>
-         <hr />
-          <span className="linkdiv">
-              <a href="https://github.com/MouS0926/BookHubX" target='_blank' className='project-github-link'> <BsGithub/></a>
-              <a href="https://book-hub-x.vercel.app/" target='_blank' className='project-deployed-link'> <FiExternalLink/></a>
-          </span>
-      
-       </div>
+       
 
 
 

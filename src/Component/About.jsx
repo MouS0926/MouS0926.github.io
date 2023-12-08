@@ -127,6 +127,7 @@ const DIV=styled.div`
     flex-direction: column;
     width: 90%;
     padding: 10px 2px;
+    margin: 0 auto;
 }
 
 .ab-content {
@@ -180,7 +181,14 @@ const DIV=styled.div`
 }
 }
 
-
+@media screen and (min-device-width: 577px) and (max-device-width: 767px){
+  .resumeBtn {
+    padding: 14px 12px;
+    border-radius: 5px;
+    font-size: 17px;
+  
+}
+}
 @media screen and (min-device-width: 768px) and (max-device-width: 941px)
 {
   .abtContact a div {
