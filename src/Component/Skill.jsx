@@ -68,21 +68,81 @@ export const Skill = () => {
        
       </div>
 
-      <div className="skillCapsection">
+      {/* <div className="skillCapsection">
       <div className='skillCap'> 
           <p> <span>BACK</span>  END</p>
         </div>
         <div className='skillCap'> 
           <p> <span>TOOL</span>SETS </p>
         </div>
-</div>   
+</div>    */}
 
 <div className="skillsectiontwo">
 
 
+<div className="backend">
+      <div className='skillCap'> 
+          <p> <span>BACK</span>  END</p>
+        </div>
 
+        <div className="skildiv">
+         
+
+         
+         <div className='skills-card'>
+           <img src={mongo} alt="MongoDB" className='skills-card-img' />
+           <p className="skills-card-name">MongoDB</p>
+         </div>
+         <div className='skills-card'>
+           <img src={express} alt="Express JS" className='skills-card-img' />
+           <p className="skills-card-name">Express JS</p>
+         </div>
+       
+         <div className='skills-card' >
+           <img src={node} alt="Node JS" className='skills-card-img' />
+           <p className="skills-card-name">Node JS</p>
+         </div>
+ 
+         <div className='skills-card' >
+           <img src={chatgpt} alt="OpenAI" className='skills-card-img' />
+           <p className="skills-card-name">OpenAI</p>
+         </div>
+       </div>
+</div>
+
+
+<div className="toolset">
+        <div className='skillCap'> 
+          <p> <span>TOOL</span> SETS </p>
+        </div>
+
+
+    <div className="skildiv">
+        <div className='skills-card'>
+           <img src={git} alt="" className='skills-card-img' />
+           <p className="skills-card-name">GIT</p>
+         </div>
+
+         <div className='skills-card'>
+           <img src={vscode} alt="" className='skills-card-img' />
+           <p className="skills-card-name">Visual Studio</p>
+         </div>
+
+         <div className='skills-card'>
+           <img src={postman} alt="" className='skills-card-img' />
+           <p className="skills-card-name">POSTMAN</p>
+         </div>
+
+         <div className='skills-card'>
+           <img src={ps} alt="" className='skills-card-img' />
+           <p className="skills-card-name">PHOTOSHOP</p>
+         </div>
         
-      <div className="skildiv">
+       </div> 
+
+</div>
+        
+      {/* <div className="skildiv">
          
 
          
@@ -104,11 +164,11 @@ export const Skill = () => {
           <img src={chatgpt} alt="OpenAI" className='skills-card-img' />
           <p className="skills-card-name">OpenAI</p>
         </div>
-      </div>
+      </div> */}
 
       
 
-        <div className="skildiv">
+        {/* <div className="skildiv">
         <div className='skills-card'>
            <img src={git} alt="" className='skills-card-img' />
            <p className="skills-card-name">GIT</p>
@@ -129,7 +189,7 @@ export const Skill = () => {
            <p className="skills-card-name">PHOTOSHOP</p>
          </div>
         
-       </div>
+       </div> */}
 
 </div>
 
@@ -153,6 +213,10 @@ const DIV=styled.div`
 
 .skillCap p span{
   color:#f5b238
+}
+
+.backend,.toolset{
+  width:50%
 }
 /* .skildiv{
   width:80%;
@@ -233,6 +297,9 @@ const DIV=styled.div`
    
     flex-direction: column;
 }
+.backend,.toolset{
+  width:100%
+}
 
  .skills-card img{
   width:100px;
@@ -269,7 +336,9 @@ const DIV=styled.div`
    
     flex-direction: column;
 }
-
+.backend,.toolset{
+  width:100%
+}
  .skills-card img{
   width:100px;
 }
@@ -297,6 +366,10 @@ const DIV=styled.div`
    flex-direction: column;
 }
 
+.backend,.toolset{
+  width:100%
+}
+
 }
 
 
@@ -313,6 +386,9 @@ const DIV=styled.div`
   .skillsectiontwo {
    
    flex-direction: column;
+}
+.backend,.toolset{
+  width:100%
 }
 }
 
