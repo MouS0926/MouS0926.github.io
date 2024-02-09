@@ -6,6 +6,7 @@ import immunax from "../image/immunax.jpeg"
 import pnc from "../image/PnC.jpeg"
 import arthub from "../image/arthub.jpeg"
 import bookhubx from "../image/BookhubX.jpeg"
+
 import { BsGithub } from "react-icons/bs";
 import { FiExternalLink } from "react-icons/fi";
 
@@ -31,8 +32,8 @@ export default function Project() {
         <h5 className='project-tech-stack'><span>Tech Stacks : </span> React , React-Redux , TypeScript , Chakra UI , Styled-components, Node JS , Expres JS , MongoDB</h5>
          <hr />
           <span className="linkdiv">
-              <a href="https://github.com/MouS0926/ARTHUB--Image-posting-website-" target='_blank' className='project-github-link'> <BsGithub/></a>
-              <a href="https://arthub-rosy.vercel.app/" target='_blank' className='project-deployed-link'> <FiExternalLink/></a>
+              <a href="https://github.com/MouS0926/ARTHUB--Image-posting-website-" target='_blank' className='project-github-link' rel="noreferrer"> <BsGithub/></a>
+              <a href="https://arthub-rosy.vercel.app/" target='_blank' className='project-deployed-link' rel="noreferrer"> <FiExternalLink/></a>
           </span>
       
        </div>
@@ -48,23 +49,23 @@ export default function Project() {
         <h5 className='project-tech-stack'><span>Tech Stacks : </span> Angular , Telwind Css , Node JS , Expres JS , MongoDB, OpenAI</h5>
          <hr />
           <span className="linkdiv">
-              <a href="https://github.com/MouS0926/BookHubX" target='_blank' className='project-github-link'> <BsGithub/></a>
-              <a href="https://book-hub-x.vercel.app/" target='_blank' className='project-deployed-link'> <FiExternalLink/></a>
+              <a href="https://github.com/MouS0926/BookHubX" target='_blank' className='project-github-link' rel="noreferrer"> <BsGithub/></a>
+              <a href="https://book-hub-x.vercel.app/" target='_blank' className='project-deployed-link' rel="noreferrer"> <FiExternalLink/></a>
           </span>
       
        </div>
 
 
       <div className='project-card'>
-        <img src={wish} alt=""  />
-        <h5 className='project-title'>💻 Wish Bucket 💻</h5>
-        <p className='project-description'>An e-commerce platform. Browse diverse clothing categories, utilize sorting and filtering, and effortlessly
+        <img src={pnc} alt=""  />
+        <h5 className='project-title'>💻 Precious &amp; Charms 💻</h5>
+        <p className='project-description'>Precious Charms is an e-commerce website specializing in jewelry, watches, and accessories. utilize sorting and filtering, and effortlessly
           add items to your cart and wishlist. Have payments method and confirm order option.</p>
-        <h5 className='project-tech-stack'><span>Tech Stacks : </span> HTML, CSS , JavaScript </h5>
+        <h5 className='project-tech-stack'><span>Tech Stacks : </span> React , React-Redux , TypeScript , Chakra UI , Styled-components </h5>
          <hr />
           <span className="linkdiv">
-              <a href="https://github.com/MouS0926/synonymous-wall-8152" target='_blank' className='project-github-link'> <BsGithub/></a>
-              <a href="https://wishbucketcom.netlify.app/" target='_blank' className='project-deployed-link'> <FiExternalLink/></a>
+              <a href="https://github.com/MouS0926/Precious-And-Charms-Ecommerce" target='_blank' className='project-github-link' rel="noreferrer"> <BsGithub/></a>
+              <a href="https://precious-and-charms-one.vercel.app/" target='_blank' className='project-deployed-link' rel="noreferrer"> <FiExternalLink/></a>
           </span>
       
        </div>
@@ -77,7 +78,7 @@ export default function Project() {
         <h5 className='project-tech-stack'><span>Tech Stacks : </span> HTML, CSS , JavaScript,Bootstrap </h5>
          <hr />
           <span className="linkdiv">
-              <a href="https://github.com/MouS0926/mountainous-sidewalk-9735" target='_blank' className='project-github-link'> <BsGithub/></a>
+              <a href="https://github.com/MouS0926/mountainous-sidewalk-9735" target='_blank' className='project-github-link' rel="noreferrer"> <BsGithub/></a>
               <a href="https://sarthitravel.netlify.app/" target='_blank' className='project-deployed-link'> <FiExternalLink/></a>
           </span>
       
